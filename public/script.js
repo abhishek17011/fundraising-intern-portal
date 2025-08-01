@@ -12,7 +12,8 @@ const leaderboardList = document.getElementById('leaderboard-list');
 // Function to fetch and display intern data
 async function fetchInternData(internId) {
   try {
-    const response = await fetch(`/api/intern/${internId}`);
+    const BACKEND_URL = 'https://fundraising-intern-portal-5vbc.onrender.com'; // Replace with your actual Render URL
+    const response = await fetch(`${BACKEND_URL}/api/intern/${internId}`);
     if (!response.ok) {
       throw new Error('Failed to fetch intern data');
     }
@@ -30,7 +31,7 @@ async function fetchInternData(internId) {
 // Function to fetch and display leaderboard data
 async function fetchLeaderboard() {
   try {
-    const response = await fetch('/api/leaderboard');
+    const response = await fetch(`${BACKEND_URL}/api/leaderboard`);
     if (!response.ok) {
       throw new Error('Failed to fetch leaderboard data');
     }
@@ -59,7 +60,7 @@ loginForm.addEventListener('submit', async (e) => {
   
   // Dummy login logic
   try {
-    const response = await fetch('/api/login', { method: 'POST' });
+    const response = await fetch('${BACKEND_URL}/api/login', { method: 'POST' });
     const result = await response.json();
     
     if (result.success) {
