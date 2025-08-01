@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundraising Intern Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="login-page">
+    <div class="card">
+      <h1>Login</h1>
+      <form id="login-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="dashboard" style="display:none;">
+    <header>
+      <nav>
+        <h1>Intern Dashboard</h1>
+        <button id="logout-btn">Logout</button>
+      </nav>
+    </header>
+    <main>
+      <section class="user-info">
+        <h2 id="intern-name"></h2>
+        <p>Your Referral Code: <strong id="referral-code"></strong></p>
+      </section>
+
+      <section class="stats">
+        <h3>Total Donations Raised</h3>
+        <p class="stat-number">$<span id="donations-raised">0</span></p>
+      </section>
+
+      <hr>
+
+      <section class="rewards">
+        <h3>Rewards & Unlockables</h3>
+        <div class="rewards-list" id="rewards-list">
+          <div class="reward-item">
+            <h4>Bronze Tier: $1,000</h4>
+            <p>Custom sticker pack</p>
+          </div>
+          <div class="reward-item">
+            <h4>Silver Tier: $2,500</h4>
+            <p>Exclusive t-shirt</p>
+          </div>
+          <div class="reward-item">
+            <h4>Gold Tier: $5,000</h4>
+            <p>Amazon gift card</p>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="leaderboard">
+        <h3>Leaderboard</h3>
+        <ul id="leaderboard-list">
+          </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

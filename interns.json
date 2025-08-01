@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Johnson",
+    "referralCode": "alexj2025",
+    "donationsRaised": 1500,
+    "unlockedRewards": ["Bronze Tier", "Swag Pack"]
+  },
+  {
+    "id": 2,
+    "name": "Samantha Lee",
+    "referralCode": "samanthal2025",
+    "donationsRaised": 2500,
+    "unlockedRewards": ["Bronze Tier", "Silver Tier", "Swag Pack"]
+  },
+  {
+    "id": 3,
+    "name": "Michael Chen",
+    "referralCode": "michaelc2025",
+    "donationsRaised": 800,
+    "unlockedRewards": ["Bronze Tier"]
+  }
+]
